@@ -1,1 +1,22 @@
+local server Project Setup & Environment
+
+pip install uv : Installs the uv package manager.
+uv init . : Initializes a new uv project in the current directory.
+uv add mcp : Adds the MCP library to your project dependencies.
+
+Server Development & Testing
+
+uv run main.py : Executes the Python server file (used for quick testing).
+uv run fastmcp dev main.py : Runs the MCP Inspector for debugging the server locally.
+uv add aiosqlite : Adds the aiosqlite library to support asynchronous database operations.
+
+Git Commands for Deployment
+git init : Initializes a local Git repository.
+git add . : Stages all files for the commit.
+git commit -m "message" : Commits the changes to the local history.
+git remote add origin : Connects the local repository to a remote GitHub repository.
+git push origin main : Pushes the code to GitHub to trigger a deployment on FastMCP Cloud.
+
+Installing/Proxying Servers
+uv run fastmcp install claude-desktop main.py (39:46): Installs an MCP server locally into the Claude Desktop configuration file.
 
