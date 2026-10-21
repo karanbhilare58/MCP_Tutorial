@@ -1,0 +1,14 @@
+remote server
+Project Setup and Dependencies
+
+uv init .: Initializes the uv project management environment in the current directory 
+uv add mcp: Installs the FastMCP library as a dependency for your project 
+mcp --version: Verifies the installation and displays the current FastMCP version .
+  
+Testing and Debugging
+
+uv run mcp dev main.py: Launches the MCP Inspector tool to debug your server and test tools like 'dice roll' or 'add numbers' before full integration (31:23).
+  
+Running and Integration
+
+uv run mcp run main.py: Starts your local MCP server, allowing MCP clients to communicate with it 
